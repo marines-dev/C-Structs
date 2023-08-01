@@ -127,15 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="circularlinkedlist.c" />
-    <ClCompile Include="circularlinkedlist.h" />
     <ClCompile Include="doublylinkedlist.c" />
-    <ClCompile Include="doublylinkedlist.h" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="singlylinkedlist.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="singlylinkedlist.h" />
+    <ClInclude Include="doublylinkedlist.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

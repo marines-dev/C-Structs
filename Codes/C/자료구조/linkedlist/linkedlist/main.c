@@ -55,11 +55,65 @@
 //	return 0;
 //}
 
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include "circularlinkedlist.h"
+//
+//void DisplayLinkedList(CircularList* _pList)
+//{
+//	int i = 0;
+//	if (_pList != NULL)
+//	{
+//		printf("현재 원소 개수 : %d\n", _pList->currentElementCount);
+//
+//		for (i = 0; i < _pList->currentElementCount; ++i)
+//		{
+//			printf("Index[%d] : %d\n", i, GetCLElement(_pList, i)->data);
+//		}
+//	}
+//	else
+//	{
+//		printf("원소가 없습니다.\n");
+//	}
+//}
+//
+//int main()
+//{
+//	int i = 0;
+//	CircularList* pList = NULL;
+//	CircularNode* pNode = NULL;
+//	CircularNode node;
+//
+//	pList = CreateCircularList();
+//	if (pList != NULL)
+//	{
+//		node.data = 10;
+//		AddCLElement(pList, 0, node);
+//
+//		node.data = 20;
+//		AddCLElement(pList, 1, node);
+//
+//		node.data = 30;
+//		AddCLElement(pList, 2, node);
+//		DisplayLinkedList(pList);
+//
+//		RemoveCLElement(pList, 1);
+//		DisplayLinkedList(pList);
+//
+//		RemoveCLElement(pList, 0);
+//		DisplayLinkedList(pList);
+//
+//		DeleteCircularList(pList);
+//	}
+//
+//	return 0;
+//}
+
 #include <stdio.h>
 #include <stdlib.h>
-#include "circularlinkedlist.h"
+#include "doublylinkedlist.h"
 
-void DisplayLinkedList(CircularList* _pList)
+void DisplayLinkedList(DoublyList* _pList)
 {
 	int i = 0;
 	if (_pList != NULL)
@@ -68,7 +122,7 @@ void DisplayLinkedList(CircularList* _pList)
 
 		for (i = 0; i < _pList->currentElementCount; ++i)
 		{
-			printf("Index[%d] : %d\n", i, GetCLElement(_pList, i)->data);
+			printf("Index[%d] : %d\n", i, GetDLElement(_pList, i)->data);
 		}
 	}
 	else
@@ -80,30 +134,30 @@ void DisplayLinkedList(CircularList* _pList)
 int main()
 {
 	int i = 0;
-	CircularList* pList = NULL;
-	CircularNode* pNode = NULL;
-	CircularNode node;
+	DoublyList* pList = NULL;
+	DoublyNode* pNode = NULL;
+	DoublyNode node;
 
-	pList = CreateCircularLinkedList();
+	pList = CreateDoublyList();
 	if (pList != NULL)
 	{
 		node.data = 10;
-		AddCLElement(pList, 0, node);
+		AddDLElement(pList, 0, node);
 
 		node.data = 20;
-		AddCLElement(pList, 1, node);
+		AddDLElement(pList, 1, node);
 
 		node.data = 30;
-		AddCLElement(pList, 2, node);
+		AddDLElement(pList, 2, node);
 		DisplayLinkedList(pList);
 
-		RemoveCLElement(pList, 1);
+		RemoveDLElement(pList, 1);
 		DisplayLinkedList(pList);
 
-		RemoveCLElement(pList, 0);
+		RemoveDLElement(pList, 0);
 		DisplayLinkedList(pList);
 
-		DeleteCircularLinkedList(pList);
+		DeleteDoublyList(pList);
 	}
 
 	return 0;

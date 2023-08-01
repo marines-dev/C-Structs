@@ -22,12 +22,12 @@ typedef struct
 	SinglyNode headerNode; //헤더 노드
 } SinglyList;
 
-SinglyList* CreateSinglyLinkedList();
-void DeleteSinglyLinkedList(SinglyList* _pList);
-void ClearSinglyLinkedList(SinglyList* _pList);
-int GetSinglyLinkedListLength(SinglyList* _pList);
+SinglyList* CreateSinglyList();
+void DeleteSinglyList(SinglyList* _pList);
+void ClearSinglyList(SinglyList* _pList);
+int GetSinglyListLength(SinglyList* _pList);
 
-int IsSinglyLinkedListEmpty(SinglyList* _pList);
+int IsSinglyListEmpty(SinglyList* _pList);
 
 int AddSLElement(SinglyList* _pList, int _index, SinglyNode _element);
 int RemoveSLElement(SinglyList* _pList, int _index);

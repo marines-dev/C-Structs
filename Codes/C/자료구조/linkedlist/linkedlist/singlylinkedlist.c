@@ -3,7 +3,7 @@
 #include <string.h>
 #include "singlylinkedlist.h"
 
-SinglyList* CreateSinglyLinkedList()
+SinglyList* CreateSinglyList()
 {
     SinglyList* pReturn = NULL;
     int i = 0;
@@ -14,24 +14,23 @@ SinglyList* CreateSinglyLinkedList()
     }
     else
     {
-        printf("Error : 메모리 할당\n");
+        printf("Error : 메모리 할당 실패\n");
         return NULL;
     }
 
     return pReturn;
 }
 
-void DeleteSinglyLinkedList(SinglyList* _pList)
+void DeleteSinglyList(SinglyList* _pList)
 {
-    int i = 0;
     if (_pList != NULL)
     {
-        ClearSinglyLinkedList(_pList);
+        ClearSinglyList(_pList);
         free(_pList);
     }
 }
 
-void ClearSinglyLinkedList(SinglyList* _pList)
+void ClearSinglyList(SinglyList* _pList)
 {
     if (_pList != NULL)
     {
@@ -42,7 +41,7 @@ void ClearSinglyLinkedList(SinglyList* _pList)
     }
 }
 
-int GetSinglyLinkedListLength(SinglyList* _pList)
+int GetSinglyListLength(SinglyList* _pList)
 {
     int ret = 0;
 
@@ -54,7 +53,7 @@ int GetSinglyLinkedListLength(SinglyList* _pList)
     return ret;
 }
 
-int IsSinglyLinkedListEmpty(SinglyList* _pList)
+int IsSinglyListEmpty(SinglyList* _pList)
 {
     int ret = FALSE;
     if (_pList != NULL)
@@ -117,13 +116,13 @@ int RemoveSLElement(SinglyList* _pList, int _index)
 {
     int ret = FALSE;
     int i = 0;
-    int arrayCount = 0;
+    int count = 0;
     SinglyNode* pNode = NULL;
     SinglyNode* pDelNode = NULL;
     if (_pList != NULL)
     {
-        arrayCount = GetSinglyLinkedListLength(_pList);
-        if (_index >= 0 && _index < arrayCount)
+        count = GetSinglyListLength(_pList);
+        if (_index >= 0 && _index < count)
         {
             pNode = &(_pList->headerNode);
             for (i = 0; i < _index; ++i)

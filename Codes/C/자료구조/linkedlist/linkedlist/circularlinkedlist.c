@@ -3,7 +3,7 @@
 #include <string.h>
 #include "circularlinkedlist.h"
 
-CircularList* CreateCircularLinkedList()
+CircularList* CreateCircularList()
 {
     CircularList* pReturn = NULL;
     int i = 0;
@@ -14,24 +14,24 @@ CircularList* CreateCircularLinkedList()
     }
     else
     {
-        printf("Error : 메모리 할당\n");
+        printf("Error : 메모리 할당 실패\n");
         return NULL;
     }
 
     return pReturn;
 }
 
-void DeleteCircularLinkedList(CircularList* _pList)
+void DeleteCircularList(CircularList* _pList)
 {
     int i = 0;
     if (_pList != NULL)
     {
-        ClearCircularLinkedList(_pList);
+        ClearCircularList(_pList);
         free(_pList);
     }
 }
 
-void ClearCircularLinkedList(CircularList* _pList)
+void ClearCircularList(CircularList* _pList)
 {
     if (_pList != NULL)
     {
@@ -42,7 +42,7 @@ void ClearCircularLinkedList(CircularList* _pList)
     }
 }
 
-int GetCircularLinkedListLength(CircularList* _pList)
+int GetCircularListLength(CircularList* _pList)
 {
     int ret = 0;
 
@@ -54,7 +54,7 @@ int GetCircularLinkedListLength(CircularList* _pList)
     return ret;
 }
 
-int IsCircularLinkedListEmpty(CircularList* _pList)
+int IsCircularListEmpty(CircularList* _pList)
 {
     int ret = FALSE;
     if (_pList != NULL)
@@ -82,7 +82,7 @@ int AddCLElement(CircularList* _pList, int _index, CircularNode _element)
             pNewNode = (CircularNode*)malloc(sizeof(CircularNode));
             if (pNewNode == NULL)
             {
-                printf("Error : Node 메모리 할당 실패\n");
+                printf("Error : 메모리 할당 실패\n");
                 return ret;
             }
 
@@ -146,7 +146,7 @@ int RemoveCLElement(CircularList* _pList, int _index)
 
     if (_pList != NULL)
     {
-        count = GetCircularLinkedListLength(_pList);
+        count = GetCircularListLength(_pList);
         if (_index >= 0 && _index < count)
         {
             if (_index == 0) //마지막 노드이면서 동시에 첫 번째 노드를 제거하는 경우

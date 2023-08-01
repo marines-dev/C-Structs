@@ -18,24 +18,12 @@
     <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="circularlinkedlist.h">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="doublylinkedlist.h">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="circularlinkedlist.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="doublylinkedlist.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="singlylinkedlist.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="singlylinkedlist.h">
+    <ClInclude Include="doublylinkedlist.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

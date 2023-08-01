@@ -8,30 +8,30 @@
 #endif
 
 
-#ifndef _CIRCULARLINKEDLIST_
-#define _CIRCULARLINKEDLIST_
+#ifndef _CIRCULARLIST_
+#define _CIRCULARLIST_
 
-typedef struct
+typedef struct CircularNodeType
 {
 	int data;
 	struct CircularNode* pLink;
 } CircularNode;
 
-typedef struct
+typedef struct CircularListType
 {
 	int currentElementCount; //현재 저장된 원소의 개수
 	CircularNode* pLink; //헤드 포인터
 } CircularList;
 
 CircularList* CreateCircularLinkedList();
-void DeleteCircularLinkedList(CircularList* _pList);
-void ClearCircularLinkedList(CircularList* _pList);
-int GetCircularLinkedListLength(CircularList* _pList);
+void DeleteCircularList(CircularList* _pList);
+void ClearCircularList(CircularList* _pList);
+int GetCircularListLength(CircularList* _pList);
 
-int IsCircularLinkedListEmpty(CircularList* _pList);
+int IsCircularListEmpty(CircularList* _pList);
 
 int AddCLElement(CircularList* _pList, int _index, CircularNode _element);
 int RemoveCLElement(CircularList* _pList, int _index);
 CircularNode* GetCLElement(CircularList* _pList, int _index);
 
-#endif _CIRCULARLINKEDLIST_
+#endif _CIRCULARLIST_
