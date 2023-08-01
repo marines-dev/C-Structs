@@ -1,0 +1,15 @@
+﻿  circularlinkedlist.c
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(98,37): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(103,45): warning C4133: '!=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(105,35): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(110,38): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(118,30): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(123,33): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(163,45): warning C4133: '!=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(165,35): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(169,35): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(178,30): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(181,26): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(209,23): warning C4133: '=': 'CircularNode *'과(와) 'CircularNode *' 사이의 형식이 호환되지 않습니다.
+D:\Development\VisualStudio\자료구조\linkedlist\linkedlist\circularlinkedlist.c(136): warning C4715: 'AddCLElement': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  linkedlist.vcxproj -> D:\Development\VisualStudio\자료구조\linkedlist\x64\Debug\linkedlist.exe
