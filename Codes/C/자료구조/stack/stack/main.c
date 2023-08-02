@@ -13,8 +13,8 @@ void DisplayArrayStack(ArrayStack* _pStack)
         int size = _pStack->maxElementCount;
         int top = _pStack->currentElementCount;
 
-        printf("스택 크기 : %d\n", size);
-        printf("현재 원소 개수 : %d\n", top);
+        printf("Max Element Count : %d\n", size);
+        printf("Current Element Count : %d\n", top);
 
         for (i = size - 1; i >= top; --i)
         {
