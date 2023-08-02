@@ -31,7 +31,7 @@ void DisplayArrayStack(ArrayStack* _pStack)
 int main()
 {
     ArrayStack* pStack = NULL;
-    ArrayStackNode* pNode = NULL;
+    ArrayStackNode node;
     char value = 0;
 
     pStack = CreateArrayStack(6);
@@ -50,27 +50,15 @@ int main()
         PushAS(pStack, node5);
         DisplayArrayStack(pStack);
 
-        pNode = PopAS(pStack);
-        if (pNode != NULL)
-        {
-            printf("Pop : %c\n", pNode->data);
-            free(pNode);
-        }
-        else
-        {
-            printf("스택이 공백 상태 입니다");
-        }
+        node = PopAS(pStack);
+        printf("Pop : %c\n", node.data);
 
+        node = PopAS(pStack);
+        printf("Pop : %c\n", node.data);
         DisplayArrayStack(pStack);
-        pNode = PeekAS(pStack);
-        if (pNode != NULL)
-        {
-            printf("Peek : %c\n", pNode->data);
-        }
-        else
-        {
-            printf("스택이 공백 상태 입니다");
-        }
+
+        node = PeekAS(pStack);
+        printf("Peek : %c\n", node.data);
 
         DisplayArrayStack(pStack);
     }

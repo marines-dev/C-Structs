@@ -17,7 +17,7 @@ ArrayStack* CreateArrayStack(int _maxElementCount)
         }
         else
         {
-            printf("Error : 메모리 할당 실패\n");
+            printf("Falied : Allocate Memory\n");
             return NULL;
         }
 
@@ -28,7 +28,7 @@ ArrayStack* CreateArrayStack(int _maxElementCount)
         }
         else
         {
-            printf("Error : 메모리 할당 실패\n");
+            printf("Falied : Allocate Memory\n");
             return NULL;
         }
 
@@ -90,46 +90,44 @@ int PushAS(ArrayStack* _pStack, ArrayStackNode element)
         }
         else
         {
-            printf("Error : 스택이 가득 찼습니다\n");
+            printf("Failed : Stack is Full\n");
         }
         
         return;
     }
 }
 
-ArrayStackNode* PopAS(ArrayStack* _pStack)
+ArrayStackNode PopAS(ArrayStack* _pStack)
 {
-    ArrayStackNode* pReturn = NULL;
+    ArrayStackNode pReturn;
+
     if (_pStack != NULL)
     {
         if (IsArrayStackEmpty(_pStack) == FALSE)
         {
-            pReturn = (ArrayStackNode*)malloc(sizeof(ArrayStackNode));
-            if (pReturn != NULL)
-            {
-                *pReturn = _pStack->pElement[_pStack->currentElementCount - 1];
-                _pStack->currentElementCount--;
-            }
-            else
-            {
-                printf("Error : 메모리 할당 실패\n");
-            }
+            pReturn = _pStack->pElement[_pStack->currentElementCount - 1];
+            _pStack->currentElementCount--;
+        }
+        else
+        {
+            printf("Failed : Stack is Empty");
         }
     }
 
     return pReturn;
 }
 
-ArrayStackNode* PeekAS(ArrayStack* _pStack)
+ArrayStackNode PeekAS(ArrayStack* _pStack)
 {
-    ArrayStackNode* pReturn = NULL;
-    if (_pStack != NULL)
+    ArrayStackNode pReturn;
+    if (IsArrayStackEmpty(_pStack) == FALSE)
     {
-        if (IsArrayStackEmpty(_pStack) == FALSE)
-        {
-            pReturn = &(_pStack->pElement[_pStack->currentElementCount - 1]);
-        }
-        
-        return pReturn;
+        pReturn = _pStack->pElement[_pStack->currentElementCount - 1];
     }
+    else
+    {
+        printf("Failed : Stack is Empty");
+    }
+
+    return pReturn;
 }

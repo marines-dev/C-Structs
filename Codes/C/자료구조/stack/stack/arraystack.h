@@ -20,8 +20,8 @@ int IsArrayStackFull(ArrayStack* _pStack);
 int IsArrayStackEmpty(ArrayStack* _pStack);
 
 int PushAS(ArrayStack* _pStack, ArrayStackNode element);
-ArrayStackNode* PopAS(ArrayStack* _pStack);
-ArrayStackNode* PeekAS(ArrayStack* _pStack);
+ArrayStackNode PopAS(ArrayStack* _pStack);
+ArrayStackNode PeekAS(ArrayStack* _pStack);
 
 #endif	_ARRAYSTACK_
 
