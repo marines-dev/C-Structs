@@ -1,0 +1,5 @@
+﻿  arrayqueue.c
+  main.c
+D:\Development\Git\git-management\Codes\C\자료구조\queue\queue\main.c(77,19): warning C4133: '=': 'LinkedQueueNode *'과(와) 'LinkedQueueNode *' 사이의 형식이 호환되지 않습니다.
+  코드를 생성하고 있습니다...
+  queue.vcxproj -> D:\Development\Git\git-management\Codes\C\자료구조\queue\x64\Debug\queue.exe
