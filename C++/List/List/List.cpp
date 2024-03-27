@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 using namespace std;
 
-// 이중 연결 리스트 노드
+// 이중 연결 리스트의 노드
 struct Node {
     int data;
     Node* prev;
